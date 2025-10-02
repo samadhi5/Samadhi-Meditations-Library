@@ -1,5 +1,5 @@
-app = "your-ghost-app-name"
-primary_region = "sjc"
+app = "samadhi-meditations-library"
+primary_region = "syd"
 
 [build]
 
@@ -18,7 +18,7 @@ primary_region = "sjc"
 
 [env]
   NODE_ENV = "production"
-  url = "https://your-ghost-app-name.fly.dev"
+  url = "https://samadhi-meditations-library.fly.dev"
   database__client = "sqlite3"
   database__connection__filename = "/var/lib/ghost/content/data/ghost.db"
   privacy__useUpdateCheck = "false"
@@ -26,3 +26,4 @@ primary_region = "sjc"
 [mounts]
   source = "ghost_data"
   destination = "/var/lib/ghost/content"
+  initial_size = "3gb"

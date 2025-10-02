@@ -1,4 +1,4 @@
-FROM ghost:5-alpine
+FROM ghost:6-alpine
 
 # Set working directory
 WORKDIR /var/lib/ghost
